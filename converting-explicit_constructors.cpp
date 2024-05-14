@@ -1,7 +1,6 @@
 #include <iostream>
 
-//! the modern best practice is to make every constructor that accepts a single argument explicit by default.
-//? this way only non implicit conversions are allowed
+//! its best practice to make every constructor that accepts a single argument explicit by default. implicit conversations from other types would be allowed otherwise
 
 class Person{
     private:
@@ -45,7 +44,7 @@ int main(){
 
     //! the line below throws a compiler error because the compiler can't explicitly convert more than once
     // print_person("simon"); //? first implicit conversion from C like string to std::string_view and second implicit conversion from std::string_view to Person
-     
+    
 
 
     return 0;
